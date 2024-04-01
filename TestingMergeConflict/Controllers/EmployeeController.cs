@@ -18,11 +18,18 @@ public class EmployeeController : ControllerBase
     public IActionResult PostEmployee()
     {
         return Ok("added");
+    }
 
     [HttpGet]
     public IActionResult GetAllEmployee()
     {
         return Ok(employeeName);
 
+    }
+
+    [HttpDelete]
+    public IActionResult DeleteEmployee()
+    {
+        return Ok("Deleted");
     }
 }
