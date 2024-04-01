@@ -13,9 +13,9 @@ public class EmployeeController : ControllerBase
         "Ram",
         "Ganesh"
     ];
-    //[HttpGet]
-    //public IActionResult GetAllEmployee()
-    //{
-    //    return Ok(employeeName);
-    //}
+    [HttpGet]
+    public IActionResult GetAllEmployee()
+    {
+        return Ok(employeeName);
+    }
 }
