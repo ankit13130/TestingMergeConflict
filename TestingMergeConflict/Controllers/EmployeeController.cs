@@ -33,7 +33,7 @@ public class EmployeeController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult GetEmployee()
+    public IActionResult GetAEmployee()
     {
         return Ok(employeeName);
 
