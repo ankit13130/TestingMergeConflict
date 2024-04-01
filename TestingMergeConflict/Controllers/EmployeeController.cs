@@ -13,9 +13,16 @@ public class EmployeeController : ControllerBase
         "Ram",
         "Ganesh"
     ];
+
     [HttpPost]
     public IActionResult PostEmployee()
     {
         return Ok("added");
+
+    [HttpGet]
+    public IActionResult GetAllEmployee()
+    {
+        return Ok(employeeName);
+
     }
 }
