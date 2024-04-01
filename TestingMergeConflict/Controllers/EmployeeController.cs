@@ -13,6 +13,11 @@ public class EmployeeController : ControllerBase
         "Ram",
         "Ganesh"
     ];
+    [HttpPut]
+    public IActionResult PutEmployee()
+    {
+        return Ok(employeeName);
+    }
 
     [HttpPost]
     public IActionResult PostEmployee()
