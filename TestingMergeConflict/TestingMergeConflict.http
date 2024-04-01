@@ -1,0 +1,6 @@
+@TestingMergeConflict_HostAddress = http://localhost:5103
+
+GET {{TestingMergeConflict_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
