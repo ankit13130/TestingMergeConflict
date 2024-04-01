@@ -32,9 +32,18 @@ public class EmployeeController : ControllerBase
 
     }
 
+    [HttpGet]
+    public IActionResult GetEmployee()
+    {
+        return Ok(employeeName);
+
+    }
+
     [HttpDelete]
     public IActionResult DeleteEmployee()
     {
         return Ok("Deleted");
     }
+
+
 }
